@@ -45,3 +45,17 @@ Collegeb.display()
 Collegec.display()
 Colleged.display()
 
+
+
+function travserobject(obj) {
+    for (const key in obj) {
+     console.log(`${key}: ${obj[key]}`);
+            
+        }
+    }
+    
+console.log("traversion obj one");
+travserobject(info1)
+travserobject(info2)
+travserobject(info3)
+travserobject(info4)
