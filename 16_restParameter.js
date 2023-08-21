@@ -1,9 +1,13 @@
-function add(num1, num2, ...num ){
-    // console.log(`num1 ${num1},  num2 ${num2}`);
-    // console.log(num);
+function add(num1, num2, ...nums) {
+    let sum = num1 + num2;
+    for (let num of nums) {
+        sum += num;
+    }
+    return sum;
 }
-add(5, 6);
-add(9, 5, 6);
-add(78, 90, 51, 68);
-add(89, 90, 45,78, 90, 51, 68);
+
+console.log(add(5, 6)); 
+console.log(add(9, 5, 6)); 
+console.log(add(78, 90, 51, 68)); 
+console.log(add(89, 90, 45, 78, 90, 51, 68)); 
 
